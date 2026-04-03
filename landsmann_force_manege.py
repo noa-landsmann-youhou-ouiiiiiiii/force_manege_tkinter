@@ -1,7 +1,6 @@
 from tkinter import *
 
 print("test")
-
 fenetre = Tk()
 fenetre.title("TP Manège Parc d'attraction - BTS CIEL")
 fenetre.geometry("450x300")
@@ -12,9 +11,11 @@ label.pack()
 label=Label(fenetre, text="Entrez votre âge : ")
 label.pack()
 age=Entry(fenetre, width=10)
-age.pack()
+age.pack(pady=10)
 label=Label(fenetre, text="Entrez votre taille en mètres : ")
 label.pack()
 taille=Entry(fenetre, width=10)
-taille.pack()
+taille.pack(pady=10)
+envoyer=Button(fenetre,text="Envoyer")
+envoyer.pack(pady=10)
 fenetre.mainloop()
