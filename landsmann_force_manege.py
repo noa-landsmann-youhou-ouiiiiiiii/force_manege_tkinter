@@ -19,7 +19,10 @@ taille.pack(pady=10)
 def affiche_message():
     if (age.get() =='' or taille.get() == ''):
         champs_non_remplis()
-    elif type(int(age.get())) == str or type(float(taille.get())) == str:
+    try:
+        age_abc=int(age.get())
+        taille_abc=float(taille.get())
+    except ValueError:
         champs_remplis_lettres()
     else:
         manege_autorise()
