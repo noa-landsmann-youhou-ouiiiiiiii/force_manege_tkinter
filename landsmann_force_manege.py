@@ -17,7 +17,7 @@ label.pack()
 taille=Entry(fenetre_principale, width=10)
 taille.pack(pady=10)
 def affiche_message():
-    if (age.get() is None or taille.get() is None):
+    if (age.get() =='' or taille.get() == ''):
         champs_non_remplis()
     elif type(int(age.get())) == str or type(float(taille.get())) == str:
         champs_remplis_lettres()
